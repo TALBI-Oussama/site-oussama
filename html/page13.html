@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+
+    <meta name="description" 
+    content="ceci est la page du formulaire, vous y trouverez un formulaire vous permettant
+    de me donner votre avis concernant mon site en m'envoyant un mail">
+
+    <meta name="keywords" 
+    content="page de formulaire, formulaire, votre avis, mail">
+
+    <meta name="author" content="TALBI Oussama">
+
+    <meta charset="utf-8">
+    <title>formulaire</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../favicon_io/site.webmanifest">
+
+    <link rel="stylesheet" href="../css/menu2.css" id="mycss"/>
+    <script src="../js/theme.js"></script>
+
+  </head>
+
+  <body> <!-- ceci est la derniére page du site -->
+
+    <header>
+      <nav>
+        <ul>
+
+          <li class="accueil"><a href="#">accueil</a>
+            <ul class="submenu">
+              <li><a href="../html/accueil2.html">retour à l'accueil</a></li>
+              <!-- <li><a href="page21.html">sous-lien n°2.1</a></li> -->
+            </ul>
+          </li>
+
+          <li class="menu1"><a href="#">page 1</a>
+            <ul class="submenu">
+              <li><a href="../html/page11.html">travaux personnels</a></li>
+            </ul>
+          </li>
+
+          <li class="menu2"><a href="#">page 2</a>
+            <ul class="submenu">
+              <li><a href="../html/page12.html">liens utiles</a></li>
+            </ul>
+          </li>
+
+          <li class="menu3"><a href="#">page 3</a>
+            <ul class="submenu">
+              <li><a href="../html/page13.html">actualiser la page</a></li>
+            </ul>
+          </li>
+
+        </ul>
+      </nav>
+    </header>
+
+    <div class="page">
+
+      <h1 class="titre1">Donnez votre avis sur mon site !</h1> <!-- présentation -->
+
+      <div class="cadre">
+        <p class="par1">Aprés avoir fait un tour sur mon site, vous avez la possibilité 
+          de me donner votre avis.<br>
+          Ce site a été validé par le w3c validator.<br>
+        </p>
+
+        <p class="w3c">
+          <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px"
+                src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                alt="CSS Valide !" />
+          </a>
+        </p>
+
+      </div>
+
+      <h2 class="titre2">envoyez moi un mail</h2>
+
+      <div class="formulaire">  <!-- formulaire -->
+
+        <form action="mailto:oussamatalbi357@gmail.com" method="post" enctype="text/plain" autocomplete="on">
+          Prénom:<br>
+          <input type="text" name="name"><br>
+          Nom:<br>
+          <input type="text" name="surname"><br>
+          E-mail:<br>
+          <input type="text" name="mail"><br>
+          Contenu:<br>
+          <textarea id="story" name="story" rows="5" cols="25" placeholder="veuillez entrer votre avis ..."></textarea><br><br>
+          <input type="submit" value="Send">
+          <input type="reset" value="Reset">
+        </form>
+
+      </div>
+
+      <br>
+
+      <div class="chtheme">  <!-- boutons pour changer de theme -->
+        <p class="par3">Vous avez la possibilité de changer le thémede la page</p>
+        <button onclick="switchStyle('../css/menu2.css')">style 1</button>
+        <button onclick="switchStyle('../css/menu.css')">style 2</button>
+      </div>
+      
+      <!-- logo de l'IUT en bas de page ( en cliquant on est dirigés vers le site de l'IUT ) -->
+      <div class="logo">
+        <a href="https://www.univ-amu.fr"><img src="../images/logo.png" width="75" alt="logo de l'IUT"/></a>
+      </div>
+
+    </div>
+
+  </body>
+</html>
